@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <title>Contact</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #FAE228;
+        margin: 0;
+        padding: 0;
+        color: rgb(116, 12, 116);
+        font-size: 20px;
+        font-family: 'Comfortaa', cursive;
+        overflow-x: hidden;
+        /*to stop overflow on the right*/
+
+    }
+
+    /* to fix icon next to the name */
+    img {
+        width: 30px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .title-header {
+        width: 100%;
+        height: 100px;
+        background-color: #282828;
+        color: white;
+        padding: 60px;
+    }
+
+    .container {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .brand span {
+        color: #fff;
+    }
+
+    .wrapper {
+        box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+    }
+
+    .wrapper>* {
+        padding: 1em;
+    }
+
+    .company-info {
+        background: #FAE228;
+    }
+
+    .company-info h3,
+    .company-info ul {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+
+    .contact {
+        background: #f9feff;
+    }
+
+    /* FORM STYLES */
+    .contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .contact form label {
+        display: block;
+    }
+
+    .contact form p {
+        margin: 0;
+    }
+
+    .contact form .full {
+        grid-column: 1 / 3;
+    }
+
+    .contact form button,
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #c9e6ff;
+        color: rgb(116, 12, 116);
+    }
+
+    .contact form button {
+        background: #FAE228;
+        border: 0;
+        text-transform: uppercase;
+    }
+
+    .contact form button:hover,
+    .contact form button:focus {
+        background: #FAE228;
+        color: #fff;
+        outline: 0;
+        transition: background-color 2s ease-out;
+    }
+
+    /* LARGE SCREENS */
+    @media(min-width:700px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .wrapper>* {
+            padding: 2em;
+        }
+
+        .company-info h3,
+        .company-info ul,
+        .brand {
+            text-align: left;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand m-3" href="#">Israel Belete <img src="./assets/myface-logo.jpeg" alt="Find_one"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: 300px">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About-Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://israel2000.github.io/promising-journey-sample/">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="brand"><span>Promising Jorney</span> Web Design</h1>
+        <div class="wrapper animated bounceInLeft">
+            <div class="company-info">
+                <h3>PJ Design</h3>
+                <ul>
+                    <li><i class="fa fa-road"></i> Somewhere in America, USA</li>
+                    <li><i class="fa fa-phone"></i> (951) 716-0788</li>
+                    <li><i class="fa fa-envelope"></i> aeluidev77@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <form id="contactForm">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company" id="company">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="text" name="email" id="email">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" id="message" rows="5"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="forms.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Homepage Landing site</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('assets/Artboard-2.png');
+        background-repeat: no-repeat, center;
+        background-position: center;
+        font-size: 20px;
+        font-family: 'Comfortaa', cursive;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .header-info {
+        min-width: 100%;
+        background: black;
+        color: rgb(245, 245, 99);
+        font-size: 30px;
+        text-align: center;
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    /* fix toggle for mobile */
+    .navbar-toggler {
+        width: 100px;
+    }
+
+    h4 {
+        margin-top: -5px;
+        padding: 0 0 -90px 0;
+    }
+
+    .blockquote {
+        padding: 1.5em;
+        margin-top: 70px;
+    }
+
+    /* social media */
+    .social_media {
+        margin: 50px;
+        text-align: center;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        height: 50px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: black;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: black;
+        color: white;
+    }
+
+    .fa-google {
+        background: black;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: black;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: black;
+        color: white;
+    }
+
+    .fa-youtube:hover,
+    .fa-linkedin:hover,
+    .fa-google:hover,
+    .fa-twitter:hover,
+    .fa-facebook:hover {
+        background: white;
+        color: black;
+    }
+
+    /* form -css */
+    form {
+        margin: 50px;
+    }
+
+    button {
+        width: 100px;
+        margin: 5px;
+    }
+
+    /* change color on submit button */
+    .btn-dark {
+        background-color: rgb(116, 12, 116);
+        color: white;
+        border: 2px solid black;
+
+    }
+
+    .btn-dark:hover {
+        background-color: rgb(116, 12, 116);
+        color: yellow;
+        border: 2px solid black;
+    }
+</style>
+
+<body class="">
+    <div class="header-info">
+        <h6>If you need a website please call (970)-716-0788 | email: aeluidev77@gmail.com</h6>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand m-3" href="#">Israel Belete</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: 300px">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="about.html">About-Me</a> -->
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="https://israel2000.github.io/promising-journey-sample/">Projects</a> -->
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="pricing.html">Pricing</a> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-sm-8">
+            <blockquote class="blockquote">
+                <h1 class="mb-0">For accountability and timely assignments, call xxxx to get your personal, business or
+                    commercial website development.</h1>
+                <p class="mb-0 mt-3" style="color:rgb(116, 12, 116)">Contact me by filling out the form on your right to
+                    getting the best website in the most advanced computer language.</p>
+            </blockquote>
+            <div class="social_media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <form action="forms.php" method="post">
+                <div class="form-group">
+                    <h3 for="titleEmail">Let get started!</h3>
+                    <div class="form-group">
+                        <input type="fullName" class="form-control" id="full_name" placeholder="Full Name"
+                            name="fullName" required>
+                    </div>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter your email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button><br>
+                <button type="submit" class="btn outline-warning" name="calander">Calander</button>
+                <h6 class="mt-1">* Click "calander" if your set time to talk to us.</h6>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
